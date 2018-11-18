@@ -82,6 +82,11 @@ header {
     line-height: 1.5em;
 }
 
+.about h4 {
+    line-height: 1.5em;
+    padding: 4% 0;
+}
+
 .about p {
     font-family: Futura-Medium;
     font-style: normal;
@@ -118,6 +123,15 @@ header {
 .seprator {
     background-color: #8EAEBD;
     height: 10px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.about .quote-subtext {
+    padding: unset;
+    margin: unset;
 }
 
 footer {
