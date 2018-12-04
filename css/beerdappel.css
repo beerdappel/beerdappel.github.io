@@ -8,204 +8,215 @@
     src: url('https://beerdappel.github.io/fonts/Futura-Bold.ttf');
 }
 
-body {
-    background-color: #CF6766;
-}
-a {
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    text-decoration: none;
-}
-em {
-    font-style: oblique;
-}
-strong {
-    font-style: bold;
-}
-
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p, li {
     font-family: Futura-Medium;
     font-style: normal;
 }
-h3 {
-    text-transform: capitalize;
-    font-size: 1.875em;
-    padding: 0 0 1% 0;
-    font-weight: 800;
+
+.intro, .social-links, .hire {
+    background-color: #CF6766;
+    color: #fff;
 }
 
-header {
-    background-size: cover;
-    background-position: center top;
-    max-width: 100%;
-}
-.intro {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2% 0;
-}
-.intro h1 {
-    font-size: 3em;
+.intro h1, .about h1 {
+    font-size: 10em;
     text-align: center;
-    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 800;
     line-height: 1.5em;
 }
+
 .intro h2 {
-    font-size: 1.5em;
+    font-size: 5em;
     text-align: center;
-    color: #fff;
-    font-weight: 300;
-    text-transform: capitalize;
-    letter-spacing: 0.09em;
-}
-
-.about {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 4% 0;
-    color: white;
-    padding-left: 2%;
-}
-
-.about h3 {
-    font-size: 2em;
-    color: white;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 800;
-    line-height: 1.5em;
-}
-
-.about h4 {
-    line-height: 1.5em;
-    padding: 4% 0;
 }
 
 .about p {
-    font-family: Futura-Medium;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.8;
-    letter-spacing: .03em;
-    margin: 10px auto;
-    font-size: 1.5em;
-    padding: 2% 0;
+    font-size: 2em;
+    padding: 2%;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    line-height: 1.5em;
 }
 
-.about li {
-    font-weight: 300;
-    letter-spacing: .03em;
-    font-size: 1.5em;
-    padding: 2% 0;
+.hire a {
+    color: #fff;
 }
 
-.text-block-wrapper {
+.hire a:hover {
+    color: #30415D;
+}
+
+.social-links a {
+    color: #011833;
+}
+
+.about, .create {
     background-color: #30415D;
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: Futura-Medium;
+    color: #fff;
 }
 
-.about a {
+.create a {
     color: #8EAEBD;
 }
 
-.about a:hover {
-    text-decoration: underline;
-}
-
-.seprator {
-    background-color: #8EAEBD;
-    height: 10px;
-}
-
 .quote {
+    background-color: #8EAEBD;
+    color: #011833;
+}
+
+.about, .create a {
+    color: #8EAEBD;
+}
+
+.quote h1 {
     font-style: italic;
+    font-size: 5em;
+    padding: 2%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    line-height: 1.5em;
 }
 
-.about .quote-subtext {
-    padding: unset;
-    margin: unset;
+.quote p {
+    font-size: 2em;
+    text-align: center;
 }
 
-footer {
-    color: #fff;
-    padding: 2% 0;
-    width: 100%;
-    clear: both;
-    height: 100px;
+.hire h1 {
+    font-size: 10em;
+    text-transform: uppercase;
+    padding: 2%;
 }
-.footer-content {
-    max-width: 960px;
-    padding: 2% 0;
-    margin: 0 auto;
-    font-family: Futura-Medium;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.4;
-    color: #fff;
-    letter-spacing: .03em;
-    font-size: 1em;
+
+.hire ul {
+    list-style-type: none;
 }
+
+.hire li {
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+.create h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    padding: 2%;
+    text-align: center;
+}
+
+.create-elements {
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0.2em;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.create li {
+    display: inline;
+}
+
+.create li a:hover {
+    color: #CF6766;
+}
+
+.create-elements li {
+    padding: 3%;
+}
+
 .social {
-    float: right;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0.2em;
+    font-size: 4em;
+    font-weight: 600;
 }
+
 .social li {
     display: inline;
 }
+
 .social li a {
     color: #fff;
-    padding: 0.2em;
-    font-size: 1.8em;
-    font-weight: 600;
 }
+
 .social li a:hover {
     color: #011833;
 }
 
-@media only screen and (max-width:1000px) {
-    .social li a {
-      font-size: 1.4em;
-    }
-    .footer-content {
-      padding: 3.5%;
-    }
-}
 @media only screen and (max-width:800px) {
-    .intro h1 {
-      font-size: 4em;
-      line-height: 1.2;
+    .intro h1, .about h1  {
+        font-size: 5em;
+        line-height: 1em;
     }
+
     .intro h2 {
-      font-size: 1.8em;
-      padding-top: 3%;
+        font-size: 3em;
+        padding-top: 3%;
+        line-height: unset;
+        letter-spacing: unset;
     }
+
+    .about {
+        padding: 2%;
+        text-align: center;
+    }
+
     .about p {
-      font-size: 1em;
-      line-height: 2;
+        margin-top: 5%;
+        font-size: 1.2em;
+        padding: 1%;
     }
-    .about li {
-      font-size: 1em;
-      line-height: 2;
+
+    .quote h1 {
+        font-size: 2em;
     }
-    footer {
-      height: 130px;
-      line-height: 1.3em;
+
+    .quote p {
+        font-size: 1.2em;
     }
-    .footer-content {
-      padding: 4%;
-      font-size: 14px;
+    
+    .hire h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        padding: 2%;
     }
+
+    .hire ul {
+        list-style-type: unset;
+    }
+
+    .hire li {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .create h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .create-elements {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .create-elements li {
+        padding: 3%;
+    }
+
     .social {
-      float: left;
+        float: left;
     }
+    
     .social li a {
-      font-size: 1.3em;
+        font-size: 0.5em;
+        padding: 2%;
     }
 }

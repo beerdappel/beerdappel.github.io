@@ -4,24 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+        <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/beerdappel.css">
         <title>Beerdappel Software</title>
     </head>
     <body>
-        <header>
-            <div class="intro">
+        <div id="fullpage">
+            <div class="section intro">
                 <h1>Noam Tenne</h1>
                 <h2>Software Symmathecist and DevOps Cowboy</h2>
             </div>
-        </header>
-        <div class="text-block-wrapper">
-            <section class="about">
-                <h3>Hi, I'm Noam.</h3>
+            <div class="section about">
+                <h1>Hi, I'm Noam.</h1>
                 <p>In the past 15 years I've worked on numerous projects, spoke at international conferences and have gained much experience in building highly-scalable, mission critical systems.</p>
-            </section>
-            <div class="seprator"></div>
-            <section class="about">
-                <h3>Are you in need of:</h3>
+                <p>Downtime is important; I spend mine rock and ice climbing, and playing my bass guitar.</p>
+            </div>
+            <div class="section hire">
+                <h1>Are you in need of:</h1>
                 <ul>
                     <li>Top notch software development or consultancy</li>
                     <li>Cutting edge DevOps</li>
@@ -29,26 +29,22 @@
                     <li>HIPAA & GDPR compliance</li>
                     <li>Polite conversation?</li>
                 </ul>
-                <h3>Then let's <a class="email" href="mailto:work@beerdappel.nl">talk</a></h3>
-            </section>
-            <div class="seprator"></div>
-            <section class="about">
-                    <h3 class="quote">"Muscles aching to work, minds aching to create - this is man."</h3>
-                    <h4>- John Steinbeck, The Grapes of Wrath</h4>
-            </section>
-            <div class="seprator"></div>
-            <section class="about">
-                    <h3 >I love to create and I find interest in almost anything; here are some projects that I'm proud of:</h3>
-                    <ul>
+                <h1>Then let's <a class="email" href="mailto:work@beerdappel.nl">talk</a></h1>
+            </div>
+            <div class="section create">
+                <h1>I love to create and I find interest in almost anything; here are some projects that I'm proud of:</h1>
+                    <ul class="create-elements">
                         <li><a href="https://github.com/browncoat-ninjas/nimoy" target="_blank">Nimoy</a></li>
                         <li><a href="https://cafebots.libsyn.com" target="_blank">Cafe Bots</a></li>
-                        <li><a href="https://notpycon.org/" target="_blank">not PyConIL</a></li>
+                        <li><a href="https://notpycon.org/" target="_blank">notPyConIL</a></li>
                         <li><a href="https://www.meetup.com/Rust-TLV/" target="_blank">Rust Meetup</a></li>
                     </ul>
-            </section>
-        </div>
-        <footer>
-            <div class="footer-content">
+                </div>
+            <div class="section quote">
+                <h1>"Muscles aching to work, minds aching to create - this is man."</h1>
+                <p>- John Steinbeck, The Grapes of Wrath</p>
+            </div>
+            <div class="section social-links">
                 <ul class="social">
                     <li>
                         <a href="mailto:work@beerdappel.nl">email.</a>
@@ -67,6 +63,15 @@
                     </li>
                 </ul>
             </div>
-        </footer>    
+        </div>
+        <script>
+            new fullpage('#fullpage', {
+	            autoScrolling:true,
+                scrollHorizontally: true,
+                licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
+            });
+
+            fullpage_api.setAllowScrolling(true);
+        </script>
     </body>
 </html>
